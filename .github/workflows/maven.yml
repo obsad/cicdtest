@@ -34,6 +34,6 @@ jobs:
         tags: latest-spring-cicd
         registry: docker.io
         dockerfile: Dockerfile
-        username: ${{DOCKER_SECRET_USERNAME}}
-        password: ${{DOCKER_SECRET_PASSWORD}}
+        username: ${{secrets.DOCKER_SECRET_USERNAME}}
+        password: ${{secrets.DOCKER_SECRET_PASSWORD}}
       
