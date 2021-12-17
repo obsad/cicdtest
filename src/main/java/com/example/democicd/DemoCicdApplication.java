@@ -6,18 +6,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@RestController("/test")
 public class DemoCicdApplication {
 
     public static void main(String[] args) {
+
         SpringApplication.run(DemoCicdApplication.class, args);
     }
 
-    @GetMapping
-    public  String hello(){
-        System.out.println("change ");
-        return "Hello from Docker";
 
-    }
 
 }
