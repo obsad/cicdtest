@@ -15,7 +15,9 @@ public class DemoCicdApplication {
 
     @GetMapping
     public  String hello(){
+        System.out.println("change ");
         return "Hello from Docker";
+
     }
 
 }
