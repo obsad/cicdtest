@@ -31,7 +31,7 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: obsat/spring-docker
-        tags: latest
+        tags: latestv2
         registry: docker.io
         dockerfile: Dockerfile
         username: ${{secrets.DOCKER_SECRET_USERNAME}}
